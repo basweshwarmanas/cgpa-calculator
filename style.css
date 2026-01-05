@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #e6eef1;
+    background-image: url("adminphoto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 80px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container effect for calculator */
+.calculator-container {
+    margin-top: 40px;
+}
+
+/* Table card style */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+th {
+    background: #2f5d9f;
+    color: white;
+    padding: 14px;
+    font-size: 15px;
+}
+
+/* Table cells */
+td {
+    padding: 12px;
+    font-weight: 500;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Remove outer border look */
+th, td {
+    border: none;
+}
+
+/* Dropdown & input styling */
+select, input[type="number"] {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+select:focus,
+input[type="number"]:focus {
+    border-color: #2f5d9f;
+    box-shadow: 0 0 5px rgba(47, 93, 159, 0.4);
+}
+
+/* Button modern style */
+button {
+    margin-top: 20px;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #2f5d9f, #1b3c73);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #1b3c73, #2f5d9f);
+}
+
+/* Result text */
+#result {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #090909;
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+        font-size: 14px;
+    }
+}
+/* SGPA Result Card */
+#result-box {
+    margin: 20px auto;
+    width: 320px;
+    background: linear-gradient(135deg, #eaecee, #c8cdd4);
+    color: rgb(3, 3, 3);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    animation: popUp 0.5s ease;
+}
+
+#result-box p {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+#result-box h1 {
+    margin: 10px 0 0;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/* Hide initially */
+.hidden {
+    display: none;
+}
+
+/* Animation */
+@keyframes popUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

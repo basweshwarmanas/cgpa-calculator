@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Department & Semester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <img src = "sggslogo.png" alt="SGGS Logo" width="1540" height="100" style="display: block; margin: auto;">
+
+<h2>Select Department & Semester</h2>
+
+
+
+<label>Department:</label><br>
+<select id="department">
+    <option value="">-- Select Department --</option>
+    <option value="extc">extc</option>
+    <option value="cse">cse</option>
+    <option value="mech">mechanical</option>
+    <option value="civil">civil</option>
+    <option value="textile">textile</option>
+    <option value="IT">IT</option>
+    <option value="chemical">chemical</option>
+    <option value="production">production</option>
+    <option value="instrumentation">instrumentation</option>
+    <option value="electrical">electrical</option>
+</select>
+
+<br><br>
+
+<label>Semester:</label><br>
+<select id="semester">
+    <option value="">-- Select Semester --</option>
+    <option value="1">1st Semester</option>
+    <option value="2">2nd Semester</option>
+    <option value="3">3rd Semester</option>
+    <option value="4">4th Semester</option>
+    <option value="5">5th Semester</option>
+    <option value="6">6th Semester</option> 
+    <option value="7">7th Semester</option>
+    <option value="8">8th Semester</option>    
+</select>
+
+<br><br>
+
+<button onclick="goToCalculator()">Proceed</button>
+
+<script>
+function goToCalculator() {
+    let dept = document.getElementById("department").value;
+    let sem = document.getElementById("semester").value;
+
+    if (dept === "extc" && sem === "7") {
+        window.location.href = "index.html"; 
+    } else {
+        alert("SGPA calculator not available for selected option yet.");
+    }
+}
+</script>
+
+</body>
+</html>
