@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>SGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<h2>SGPA Calculator</h2>
+
+<table>
+    <tr>
+        <th>Subject</th>
+        <th> Theory Grade</th>
+         <th> Theory Credits</th>
+        <th> Practical Grade</th>
+        <th> Practical Credits</th>
+    </tr>
+    <tr>
+        <td>ARTIFICIAL INTELLIGENCE AND NEURAL NETWORKS</td>
+        <td>
+            <select class="theory grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+            </select>
+        </td>
+        <td><input type="number" class="theory credit" value="3"></td>
+         <td>
+            <select class="practical grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+            </select>
+        </td>
+        <td><input type="number" class="practical credit" value="1"></td>
+    </tr>
+    <tr>
+        <td>DATA COMMUNICATION AND NETWORKING</td>
+        <td>
+            <select class="theory grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+            </select>
+        </td>
+        <td><input type="number" class="theory credit" value="3"></td>
+         <td>
+            <select class="practical grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+            </select>
+        </td>
+        <td><input type="number" class="practical credit" value="1"></td>
+    </tr>
+
+<tr>
+        <td>ELECTRONIC INSTRUMENTATION</td>
+        <td>
+            <select class="theory grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+            </select>
+        </td>
+        <td><input type="number" class="theory credit" value="3"></td>
+         <td>
+            <select class="practical grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+            </select>
+        </td>
+        <td><input type="number" class="practical credit" value="1"></td>
+    </tr>
+    <tr>
+        <td>MICROWAVE ENGINEERING</td>
+        <td>
+            <select class="theory grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+            </select>
+        </td>
+        <td><input type="number" class="theory credit" value="3"></td>
+    
+     <td>
+            <select class="practical grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+            </select>
+        </td>
+         <td><input type="number" class="practical credit" value="1"></td>
+    </tr>
+    <tr>
+        <td>ENTREPRENEURIAL ECONOMICS</td>
+        <td>
+            <select class="theory grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+            </select>
+        </td>
+        <td><input type="number" class="theory credit" value="2"></td>
+        
+    </tr>
+    <tr>
+        <td>INDUSTRIAL TRAINING</td>
+        <td>
+            <select class="practical grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+            </select>
+        </td>
+        <td><input type="number" class="practical credit" value="1"></td>
+    </tr>
+    </table>
+
+<br>
+<button onclick="calculateSGPA()">Calculate SGPA</button>
+
+<div id="result-box" class="hidden">
+    <p>Your SGPA</p>
+    <h1 id="result"></h1>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
