@@ -17,13 +17,12 @@ body {
 
 /* Table card style */
 table {
+    width: 95%;
     margin: 20px auto;
     border-collapse: collapse;
     background: rgba(255, 255, 255, 0.95);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Header */
 th {
@@ -139,3 +138,10 @@ button:hover {
         opacity: 1;
     }
 }
+.logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
